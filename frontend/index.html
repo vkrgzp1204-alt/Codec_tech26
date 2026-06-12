@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Student Management System
+</title>
+
+<link rel="stylesheet"
+href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>
+Student Management System
+</h1>
+
+</header>
+
+<section class="form-section">
+
+<form id="studentForm">
+
+<input
+type="hidden"
+id="studentId">
+
+<input
+type="text"
+id="name"
+placeholder="Student Name"
+required>
+
+<input
+type="email"
+id="email"
+placeholder="Email"
+required>
+
+<input
+type="text"
+id="course"
+placeholder="Course"
+required>
+
+<input
+type="number"
+id="semester"
+placeholder="Semester"
+required>
+
+<button type="submit">
+Save Student
+</button>
+
+</form>
+
+</section>
+
+<section class="controls">
+
+<input
+type="text"
+id="search"
+placeholder="Search by Name">
+
+<button id="sortBtn">
+Sort A-Z
+</button>
+
+</section>
+
+<section>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Name</th>
+
+<th>Email</th>
+
+<th>Course</th>
+
+<th>Semester</th>
+
+<th>Actions</th>
+
+</tr>
+
+</thead>
+
+<tbody id="studentTable">
+
+</tbody>
+
+</table>
+
+</section>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
